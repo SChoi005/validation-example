@@ -1,5 +1,30 @@
 # Validation
 
-## 단일 항목 체크
+## single field validation
+```bash
 
-## 상호 관련 항목 체크
+    @Min, @DecimalMin
+    @Max, @DecimalMax
+    @NotNull
+    @Pattern
+    @NotBlank
+    @NotEmpty
+    @Digits
+    @Past
+    @Future
+    @CreditCardNumber
+    @Length
+    @Range
+    @SafeHtml
+    @URL
+    
+```
+
+## custom validation
+
+```bash
+
+```
+
+
+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
