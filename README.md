@@ -1,17 +1,35 @@
 # Validation
 
+
 ## single field validation
 ```bash
+    
+    /* javax.validation.constraints */
 
-    @Min, @DecimalMin
-    @Max, @DecimalMax
+    @Min, @DecimalMin(value=)	
+    @Max, @DecimalMax(value=) 
     @NotNull
-    @Pattern
+    @Null
+    @Pattern(regex=)
+    @Size(min=,max=)
     @NotBlank
     @NotEmpty
-    @Digits
+    @Digits(integer=, fraction = )
+    @Positive
+    @PositiveOrZero
+    @Negative
+    @NegativeOrZero
+    @Email
     @Past
     @Future
+    @PastOrPresent
+    @AssertFalse
+    @AssertTrue
+    @DateTimeFormat(pattern = "yyyyMMdd")
+    
+    /* Hibernate annotations */
+    compile('org.springframework.boot:spring-boot-starter-validation')
+    
     @CreditCardNumber
     @Length
     @Range
