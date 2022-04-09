@@ -12,6 +12,7 @@ import javax.validation.constraints.Positive;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import lombok.Data;
+import project.validation.annotation.GmailEmailCheck;
 
 @Data
 public class User{
@@ -30,6 +31,7 @@ public class User{
     @NotNull(message = "Required value.")
     private int age;
     
+    @GmailEmailCheck(message="Not gmail.")
     @Email(message = "Not proper email form.")
     @NotNull(message = "Required value.")
     private String email;
