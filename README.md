@@ -2,7 +2,7 @@
 
 
 ## single field validation
-```bash
+```java
     
     /* javax.validation.constraints */
 
@@ -40,7 +40,7 @@
 
 ## custom validation
 
-```bash
+```java
 
     /*
         @Target => target for annotation to apply
